@@ -23,7 +23,7 @@ export async function POST(request: Request): Promise<NextResponse> {
           .from('profiles')
           .select('role')
           .eq('id', user.id)
-          .single();
+          .maybeSingle();
 
         if (!profile || profile.role !== 'admin') {
           throw new Error('Unauthorized: Must be admin');

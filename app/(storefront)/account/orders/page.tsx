@@ -24,7 +24,7 @@ export default async function OrdersPage() {
     <div className="min-h-screen bg-muted/30 py-16 sm:py-24">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="flex items-center gap-4 mb-8">
-          <Button variant="ghost" size="icon" render={<Link href="/account" />}>
+          <Button variant="ghost" size="icon" nativeButton={false} render={<Link href="/account" />}>
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <h1 className="text-3xl font-extrabold tracking-tight">My Orders</h1>
@@ -59,7 +59,7 @@ export default async function OrdersPage() {
               <p className="text-muted-foreground text-center max-w-xs">
                 When you place your first order, it will appear here.
               </p>
-              <Button className="rounded-full mt-2" render={<Link href="/products" />}>
+              <Button className="rounded-full mt-2" nativeButton={false} render={<Link href="/products" />}>
                 Start Shopping
               </Button>
             </CardContent>

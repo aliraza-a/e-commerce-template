@@ -17,7 +17,7 @@ export default async function WishlistPage() {
     <div className="min-h-screen bg-muted/30 py-16 sm:py-24">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="flex items-center gap-4 mb-8">
-          <Button variant="ghost" size="icon" render={<Link href="/account" />}>
+          <Button variant="ghost" size="icon" nativeButton={false} render={<Link href="/account" />}>
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <h1 className="text-3xl font-extrabold tracking-tight">Wishlist</h1>
@@ -32,7 +32,7 @@ export default async function WishlistPage() {
             <p className="text-muted-foreground text-center max-w-xs">
               Save items you love to your wishlist and they'll appear here.
             </p>
-            <Button className="rounded-full mt-2" render={<Link href="/products" />}>
+            <Button className="rounded-full mt-2" nativeButton={false} render={<Link href="/products" />}>
               Explore Products
             </Button>
           </CardContent>

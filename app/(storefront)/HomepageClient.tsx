@@ -68,10 +68,10 @@ export function HomepageClient({ featuredProducts, categories, newArrivals }: { 
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <Button size="lg" className="h-14 px-8 text-base rounded-full shadow-lg hover:shadow-xl transition-all" render={<Link href="/products" className="flex items-center" />}>
+            <Button size="lg" className="h-14 px-8 text-base rounded-full shadow-lg hover:shadow-xl transition-all" nativeButton={false} render={<Link href="/products" className="flex items-center" />}>
               <ShoppingBag className="mr-2 h-5 w-5" /> Shop Collection
             </Button>
-            <Button size="lg" variant="outline" className="h-14 px-8 text-base rounded-full border-2" render={<Link href="/about" className="flex items-center" />}>
+            <Button size="lg" variant="outline" className="h-14 px-8 text-base rounded-full border-2" nativeButton={false} render={<Link href="/about" className="flex items-center" />}>
               Our Story
             </Button>
           </motion.div>
@@ -91,7 +91,7 @@ export function HomepageClient({ featuredProducts, categories, newArrivals }: { 
               <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">Shop by Category</h2>
               <p className="text-muted-foreground text-lg md:text-xl">Find exactly what you're looking for by browsing our curated collections.</p>
             </div>
-            <Button variant="link" className="hidden md:inline-flex text-base mt-4 md:mt-0 font-medium" render={<Link href="/categories" className="flex items-center" />}>
+            <Button variant="link" className="hidden md:inline-flex text-base mt-4 md:mt-0 font-medium" nativeButton={false} render={<Link href="/categories" className="flex items-center" />}>
               Browse all categories <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </motion.div>
@@ -142,7 +142,7 @@ export function HomepageClient({ featuredProducts, categories, newArrivals }: { 
               <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">New Arrivals</h2>
               <p className="text-muted-foreground text-lg md:text-xl">Be the first to wear our newest designs.</p>
             </div>
-            <Button variant="link" className="hidden md:inline-flex text-base mt-4 md:mt-0 font-medium" render={<Link href="/products" className="flex items-center" />}>
+            <Button variant="link" className="hidden md:inline-flex text-base mt-4 md:mt-0 font-medium" nativeButton={false} render={<Link href="/products" className="flex items-center" />}>
               Shop all new arrivals <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </motion.div>
@@ -180,7 +180,7 @@ export function HomepageClient({ featuredProducts, categories, newArrivals }: { 
           >
             <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6">Mid-Season Sale</h2>
             <p className="text-xl text-white/90 mb-10">Up to 40% off on selected items. Limited time only. Elevate your wardrobe today.</p>
-            <Button size="lg" className="rounded-full px-8 text-base bg-white text-black hover:bg-gray-100" render={<Link href="/products" className="flex items-center" />}>
+            <Button size="lg" className="rounded-full px-8 text-base bg-white text-black hover:bg-gray-100" nativeButton={false} render={<Link href="/products" className="flex items-center" />}>
               Shop Mid-Season Sale
             </Button>
           </motion.div>
@@ -213,7 +213,7 @@ export function HomepageClient({ featuredProducts, categories, newArrivals }: { 
           </motion.div>
           
           <div className="mt-16 flex justify-center">
-             <Button variant="outline" size="lg" className="rounded-full px-8 border-2" render={<Link href="/products" className="flex items-center" />}>
+             <Button variant="outline" size="lg" className="rounded-full px-8 border-2" nativeButton={false} render={<Link href="/products" className="flex items-center" />}>
                View All Best Sellers
              </Button>
           </div>
@@ -262,7 +262,7 @@ export function HomepageClient({ featuredProducts, categories, newArrivals }: { 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 We believe that true luxury lies in craftsmanship. Every stitch, every fold, and every texture is meticulously selected to ensure our products stand the test of time. Discover the story behind our latest collection.
               </p>
-              <Button size="lg" className="rounded-full px-8" render={<Link href="/about" className="flex items-center" />}>
+              <Button size="lg" className="rounded-full px-8" nativeButton={false} render={<Link href="/about" className="flex items-center" />}>
                 Read Our Story
               </Button>
             </motion.div>

@@ -40,7 +40,7 @@ export async function Navbar() {
             </Link>
             <div className="hidden sm:flex sm:space-x-4">
               {siteConfig.mainNav.map((item) => (
-                <Button key={item.title} variant="ghost" render={<Link href={item.href} />}>
+                <Button key={item.title} variant="ghost" nativeButton={false} render={<Link href={item.href} />}>
                   {item.title}
                 </Button>
               ))}
@@ -67,7 +67,7 @@ export async function Navbar() {
                     <ShoppingBag className="mr-2 h-4 w-4" /> Orders
                   </DropdownMenuItem>
                   {isAdmin && (
-                    <DropdownMenuItem render={<Link href="/admin" className="cursor-pointer flex items-center text-indigo-600" />}>
+                    <DropdownMenuItem render={<Link href="/admin" className="cursor-pointer flex items-center text-primary" />}>
                       <ShieldCheck className="mr-2 h-4 w-4" /> Admin Dashboard
                     </DropdownMenuItem>
                   )}
@@ -81,7 +81,7 @@ export async function Navbar() {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <Button variant="default" render={<Link href="/login" />}>
+              <Button variant="default" nativeButton={false} render={<Link href="/login" />}>
                 Sign In
               </Button>
             )}
